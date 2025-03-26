@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital watch</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    body {
+      /* font-style: normal; */
+      font-family: sans-serif;
+    }
+
+    .clock-dial {
+      width: 500px;
+      height: 500px;
+      border: 20px solid rgb(26, 46, 201);
+      border-radius: 50%;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .point {
+      width: 20px;
+      height: 20px;
+      border: 2px solid #b9a21d;
+      border-radius: 50%;
+      background: #b9a21d;
+      position: absolute;
+      top: 240px;
+
+      left: 240px;
+    }
+
+    .hours {
+      font-style: bold;
+      font-size: 30px;
+      position: absolute;
+      font-weight: bold;
+    }
+
+    .hour-1 {
+      top: 40px;
+      right: 130px;
+    }
+
+    .hour-2 {
+      top: 125px;
+      right: 45px;
+    }
+
+    .hour-3 {
+      bottom: 235px;
+      right: 10px;
+    }
+
+    .hour-4 {
+      top: 345px;
+      right: 45px;
+    }
+
+    .hour-5 {
+      top: 430px;
+      right: 130px;
+    }
+
+    .hour-6 {
+      bottom: 10px;
+      left: 240px;
+    }
+
+    .hour-7 {
+      top: 430px;
+      left: 130px;
+    }
+
+    .hour-8 {
+      top: 345px;
+      left: 45px;
+    }
+
+    .hour-9 {
+      bottom: 235px;
+      left: 10px;
+    }
+
+    .hour-10 {
+      top: 125px;
+      left: 45px;
+    }
+
+    .hour-11 {
+      top: 40px;
+      left: 130px;
+    }
+
+    .hour-12 {
+      top: 10px;
+      right: 240px;
+    }
+
+    .Ajanta {
+      position: absolute;
+      top: 120px;
+      right: 222px;
+      color: rgb(46, 43, 226);
+    }
+
+    .minute-hand,
+    .hour-hand,
+    .second-hand {
+      transform-origin: bottom center;
+    }
+
+    .hand {
+      transform-origin: 50% 100%;
+    }
+
+    .second-hand-wrapper {
+      width: 400px;
+      height: 400px;
+      /* border: 1px solid #000;  */
+      /* background-color: #123456;  */
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      border-radius: 50%;
+    }
+
+    .second-hand .hand {
+      width: 2px;
+      height: 185px;
+      background-color: #000000;
+      position: absolute;
+      top: 5px;
+      right: 205px;
+    }
+
+    .second-hand .arrow {
+      width: 1px;
+      height: 4px;
+      background-color: #b9a21d;
+      position: absolute;
+      top: 10px;
+      right: 201px;
+      font-weight: bold;
+      color: #050502;
+      transform: rotate(180deg);
+    }
+
+    .minute-hand-wrapper {
+      width: 400px;
+      height: 400px;
+      /* border: 1px solid #000;  */
+      /* background-color: #123456;  */
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      border-radius: 50%;
+    }
+
+    .minute-hand {
+      position: absolute;
+    }
+
+    .minute-hand .hand {
+      width: 4px;
+      height: 200px;
+      background-color: #b9a21d;
+      position: absolute;
+      top: 5px;
+      right: -195px;
+    }
+
+    .minute-hand .arrow {
+      width: 1px;
+      height: 4px;
+      background-color: #b9a21d;
+      position: absolute;
+      top: 10px;
+      right: -198px;
+      font-weight: bold;
+      color: #b9a21d;
+      transform: rotate(180deg);
+    }
+
+    .hour-hand-wrapper {
+      width: 400px;
+      height: 400px;
+      /* border: 1px solid #000;  */
+      /* background-color: #123456;  */
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      border-radius: 50%;
+    }
+
+    .hour-hand .hand {
+      width: 4px;
+      height: 150px;
+      background-color: #b9a21d;
+      position: absolute;
+      top: 55px;
+      right: 205px;
+    }
+
+    .hour-hand .arrow {
+      width: 1px;
+      height: 4px;
+      background-color: #b9a21d;
+      position: absolute;
+      top: 70px;
+      right: 201px;
+      font-weight: bold;
+      color: #b9a21d;
+      transform: rotate(180deg);
+    }
+  </style>
+  <body>
+    <div class="clock-dial">
+      <div class="point"></div>
+
+      <div class="hours hour-1">1</div>
+      <div class="hours hour-2">2</div>
+      <div class="hours hour-3">3</div>
+      <div class="hours hour-4">4</div>
+      <div class="hours hour-5">5</div>
+      <div class="hours hour-6">6</div>
+      <div class="hours hour-7">7</div>
+      <div class="hours hour-8">8</div>
+      <div class="hours hour-9">9</div>
+      <div class="hours hour-10">10</div>
+      <div class="hours hour-11">11</div>
+      <div class="hours hour-12">12</div>
+      <div class="Ajanta"><b>AJANTA</b></div>
+
+      <div class="minute-hand-wrapper" id="minute-hand">
+        <div class="minute-hand">
+          <div class="hand"></div>
+          <div class="arrow">V</div>
+        </div>
+      </div>
+      <div class="hour-hand-wrapper" id="hour-hand">
+        <div class="hour-hand">
+          <div class="hand"></div>
+          <div class="arrow">V</div>
+        </div>
+      </div>
+      <div class="second-hand-wrapper" id="second-hand">
+        <div class="second-hand">
+          <div class="hand"></div>
+          <div class="arrow">V</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var second = 0;
+      var minute = 0;
+      var hour = 0;
+      var d = new Date();
+
+      setInterval(function () {
+        d = new Date();
+        second = d.getSeconds() * 6;
+        minute = d.getMinutes() * 6;
+        hour = (d.getHours() % 12) * 30 + d.getMinutes() * 0.5;
+        document.getElementById("second-hand").style.transform =
+          "rotate(" + second + "deg)";
+        document.getElementById("minute-hand").style.transform =
+          "rotate(" + minute + "deg)";
+        document.getElementById("hour-hand").style.transform =
+          "rotate(" + hour + "deg)";
+      }, 1000);
+    </script>
+  </body>
+</html>
