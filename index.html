@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Add this in the <head> section -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <nav>
+      <div class="left">
+        <p></p>
+      </div>
+      <div class="right">
+        <ul>
+          <li><a href="#Home" data-aos="fade-right">Home</a></li>
+          <li><a href="#About-me" data-aos="fade-left">About</a></li>
+          <li><a href="#Projects" data-aos="fade-up">Projects</a></li>
+          <li><a href="#contact" data-aos="fade-down">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </head>
+  <body>
+    <main>
+      <section class="first" id="Home" data-aos="fade-up">
+        <div class="leftsection" data-aos="fade-right">
+          <h1>Hello!, My name is <span class="purple">Adarsh Namdeo</span></h1>
+          <p data-aos="fade-left">I'm Passionate</p>
+          <span id="element"></span>
+          <button  class="button" ><a href="CV.pdf">GET MY RESUME</a></button>
+        </div>
+        <div class="rightsection" style="position: relative" data-aos="zoom-in">
+          <img src="assets/4758689.png" alt="" width="400px" margin="50%" />
+        </div>
+      </section>
+      <hr data-aos="fade-left" />
+      <section id="About-me" data-aos="fade-up">
+        <div class="container">
+          <div class="about-content" data-aos="fade-right">
+            <h1>About Me</h1>
+            <p>
+              Hi, I'm <span class="purple">Adarsh</span>, a passionate
+              <span class="purple"
+                >Web Developer, Video-Editier, and Motion Designer</span
+              >
+              with a love for creating beautiful and functional websites, video,
+              motion graphics. I have experience in HTML, CSS, JavaScript, and
+              various web development frameworks for website development , Adobe
+              after-effect, Davinci resolve and Capcut for Motion-graphics and
+              video-editing as a. I enjoy turning complex problems into simple,
+              beautiful, and intuitive designs.
+            </p>
+            <p>
+              When I'm not coding, you can find me exploring new technologies,
+              reading books, or enjoying the outdoors and same for the other
+              technologies.
+            </p>
+            <button id="learn-more" data-aos="fade-up">
+              <a href="other/learn_more.html">Learn More</a>
+            </button>
+          </div>
+          <div class="about-image" data-aos="fade-left">
+            <img src="assets/your-image.jpg" alt="Adarsh" />
+          </div>
+        </div>
+      </section>
+
+      <hr data-aos="left" />
+      <!-- Add this section below the "About Me" section -->
+      <section id="Projects" data-aos="fade-up">
+        <div class="projects-container">
+          <h1>My Projects</h1>
+          <p>
+            Here are some of the projects I've worked on, categorized by
+            programming languages.
+          </p>
+
+          <!-- Python Projects -->
+          <div class="project-category" data-aos="fade-up">
+            <h2>Python Projects</h2>
+            <div class="project-grid">
+              <div class="project-card" data-aos="fade-right">
+                <h3>Project 1: Virtual Assistance</h3>
+                <p>
+                  The program is a voice-activated virtual assistant named
+                  "Jarvis." It can recognize speech, open websites, play music,
+                  fetch news, and interact with OpenAI's GPT model for
+                  responses. It also uses text-to-speech for spoken output.
+                </p>
+                <a href="main.py" class="project-link">View Project</a>
+              </div>
+              <div class="project-card" data-aos="fade-left">
+                <h3>Project 2: Flask Web Application</h3>
+                <p>
+                  Built a web application using Flask for backend and integrated
+                  it with a SQL database.
+                </p>
+                <a href="#" class="project-link">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- HTML/CSS Projects -->
+          <div class="project-category" data-aos="fade-up">
+            <h2>HTML/CSS Projects</h2>
+            <div class="project-grid">
+              <div class="project-card" data-aos="fade-right">
+                <h3>Project 1: Responsive Portfolio Website</h3>
+                <p>
+                  Designed and developed a fully responsive portfolio website
+                  using HTML and CSS.
+                </p>
+                <a href="#" class="project-link">View Project</a>
+              </div>
+              <div class="project-card" data-aos="fade-left">
+                <h3>Project 2: A MUSKAN SALON AND ACADEMY website</h3>
+                <p>
+                  The HTML file is for "Muskan Salon & Academy," a beauty salon
+                  and training academy for women. It includes sections for
+                  services (hair styling, skincare, makeup, and nail care), a
+                  gallery, an about section, and contact details. It also
+                  features a booking option and social media links.
+                </p>
+                <a href="other/muskan.html" class="project-link">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- JavaScript Projects -->
+          <div class="project-category" data-aos="fade-up">
+            <h2>JavaScript Projects</h2>
+            <div class="project-grid">
+              <div class="project-card" data-aos="fade-right">
+                <h3>Project 1: Analogue Watch</h3>
+                <p>
+                  The Analogue Watch project is a functional and visually
+                  appealing clock built using JavaScript, CSS, and HTML. It
+                  dynamically updates the clock hands in real-time using
+                  JavaScript, while CSS provides a sleek design and smooth
+                  animations. This project demonstrates my skills in DOM
+                  manipulation, responsive design, and creating interactive web
+                  components.
+                </p>
+                <a href="other/analogWatch.html" class="project-link">View Project</a>
+              </div>
+              <div class="project-card" data-aos="fade-left">
+                <h3>Project 2: Weather App</h3>
+                <p>
+                  Developed a weather app that fetches real-time weather data
+                  using an API.
+                </p>
+                <a href="#" class="project-link">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-category" data-aos="fade-up">
+            <h2>Video-Editing Projects</h2>
+            <div class="project-grid">
+              <div class="project-card" data-aos="fade-right">
+                <h3>Project 1: a case based</h3>
+                <p>
+                  The case-based video project showcases a dynamic and engaging
+                  presentation of a real-world scenario, highlighting
+                  problem-solving and decision-making processes. Designed for
+                  India Port, smooth transitions, and professional editing to
+                  narrate a compelling story. Tools like Adobe After Effects and
+                  CapCut were utilized to create visually appealing animations
+                  and effects, ensuring the video effectively communicates the
+                  intended message. This project demonstrates my ability to
+                  craft impactful videos that resonate with the audience and
+                  deliver a clear, concise narrative.
+                </p>
+                <a href="assets/0310.mp4" class="project-link">View Project</a>
+              </div>
+              <div class="project-card" data-aos="fade-left">
+                <h3>Project 2: Weather App</h3>
+                <p>
+                  Developed a weather app that fetches real-time weather data
+                  using an API.
+                </p>
+                <a href="#" class="project-link">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-category" data-aos="fade-up">
+            <h2>Motion-graphics Project</h2>
+            <div class="project-grid">
+              <div class="project-card" data-aos="fade-right">
+                <h3>Project 1: Women's Day Special</h3>
+                <p>
+                  To celebrate Women's Day, I created a heartfelt and visually
+                  engaging video for Muskan Beauty Salon. The video highlights
+                  the essence of womanhood and showcases the salon's dedication
+                  to empowering women through beauty and self-care. Using motion
+                  graphics and video editing tools like Adobe After Effects and
+                  CapCut, I incorporated vibrant visuals, smooth transitions to
+                  convey a message of appreciation and celebration. The video
+                  not only promotes the salon's services but also inspires
+                  confidence and positivity among its audience, making it a
+                  perfect tribute to Women's Day.
+                </p>
+                <a href="assets/0308(6).mp4" class="project-link">View Project</a>
+              </div>
+              <div class="project-card" data-aos="fade-left">
+                <h3>Project 2: HOLY celebration special</h3>
+                <p>
+                  To celebrate the vibrant festival of Holi, I created a
+                  colorful and engaging video for Muskan Beauty Salon. The video
+                  captures the essence of Holi with vibrant visuals, smooth
+                  transitions, and festive music, showcasing the salon's special
+                  offers and services during the celebration. Using tools like
+                  Adobe After Effects and CapCut, I incorporated motion graphics
+                  and creative effects to highlight the joy and energy of the
+                  festival. The video not only promotes the salon's services but
+                  also spreads a message of happiness, togetherness, and
+                  celebration, making it a perfect tribute to the spirit of
+                  Holi.
+                </p>
+                <a href="assets/0314(1).mp4" class="project-link">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr data-aos="fade-up" />
+      <!-- Add this section below your "Projects" section -->
+      <section class="second" data-aos="fade-up">
+        <div class="tagline" data-aos="fade-down"></div>
+        <span class="gray" data-aos="fade-right">What I have done so far</span>
+        <h1 data-aos="fade-left">Work experience</h1>
+
+        <div class="box" max-width="100%">
+          <div class="vertical" data-aos="zoom-in">
+            <img class="html" src="assets/21004063.png" alt="" />
+            <div class="details">
+              <h2>HTML</h2>
+
+              I have learned to structure web pages using semantic elements like
+              header, footer, section, article and remaining other to improve
+              accessibility and SEO. My knowledge includes creating forms with
+              input fields, buttons, and validation attributes, as well as
+              embedding multimedia elements like audio and video.
+            </div>
+          </div>
+          <div
+            class="vertical"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+            data-aos-duration="1500"
+          >
+            <img src="assets/css.png" class="css" alt="" />
+            <div class="details">
+              <h2>CSS</h2>
+              CSS brings web pages to life with styling, layouts, animations,
+              and responsiveness. Flexbox, Grid, Colors, Shadows, and Media
+              Queries create stunning designs, while Variables and Effects
+              enhance creativity and efficiency.
+            </div>
+          </div>
+          <div
+            class="vertical"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1500"
+          >
+            <img src="assets/js.webp" class="js" alt="" />
+            <div class="details">
+              <h2>JavaScript</h2>
+
+              With expertise in JavaScript, I build dynamic and interactive web
+              applications using modern frameworks, DOM manipulation, APIs, ES6+
+              features, and event-driven programming to deliver seamless user
+              experiences.
+            </div>
+          </div>
+          <div
+            class="vertical"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+            data-aos-duration="1500"
+          >
+            <img src="assets/python-icon.png" class="python" alt="" />
+            <div class="details">
+              <h2>PYTHON</h2>
+              Python is a versatile programming language that I have used for
+              data analysis, web development, and automation. I have worked with
+              libraries like Pandas and NumPy for data manipulation, Matplotlib
+              and Seaborn for data visualization, and Flask for building web
+              applications. Additionally, I have explored object-oriented
+              programming, file handling, and exception handling to build robust
+              and efficient solutions.
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr data-aos="fade-up" />
+      <!-- Add this section below the "About Me" section -->
+      <section id="contact" data-aos="fade-up">
+        <div class="contact-container">
+          <h1>Contact Me</h1>
+          <p>
+            Feel free to reach out for collaborations, queries, or just a
+            friendly hello!
+          </p>
+          <form class="contact-form" data-aos="fade-up">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Your Message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+      <!-- Add this section at the end of your <body> -->
+      <footer id="footer" data-aos="fade-up">
+        <div class="footer-container">
+          <div class="social-links">
+            <a
+              href="https://github.com/CODEWITHHADDY?tab=projects"
+              target="_blank"
+              data-aos="fade-right"
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                alt="GitHub"
+              />
+            </a>
+            <a
+              href="yourusernamehttps://linkedin.com/in/adarsh-namdeo-390700251"
+              target="_blank"
+              data-aos="fade-up"
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+                alt="LinkedIn"
+              />
+            </a>
+            <a
+              href="https://x.com/adarshnamdeo30"
+              target="_blank"
+              data-aos="fade-left"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/X_logo_2023.svg/220px-X_logo_2023.svg.png"
+                alt="Twitter"
+              />
+            </a>
+          </div>
+          <p class="copyright" data-aos="fade-up">
+            &copy; 2023 Adarsh's Portfolio. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      function toggleBlock(blockId) {
+        const block = document.getElementById(blockId);
+        const isVisible = block.style.display === "block";
+        const isOpen = block.classList.contains("open");
+
+        // Hide all other blocks
+        document.querySelectorAll(".hidden-block").forEach((el) => {
+          el.style.display = "none";
+          el.classList.remove("open");
+          el.style.maxHeight = null; // Reset height
+        });
+
+        // Toggle the clicked block
+        if (!isOpen) {
+          block.classList.add("open");
+          block.style.maxHeight = block.scrollHeight + "px"; // Set height dynamically
+        }
+        block.style.display = isVisible ? "none" : "block";
+      }
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Motion Graphics", "&amp; Video editor."],
+        typeSpeed: 50,
+      });
+      AOS.init({
+        duration: 1000, // Animation duration in milliseconds
+        once: true, // Whether animation should happen only once
+      });
+      // Add this script to your existing JavaScript
+      document
+        .getElementById("learn-more")
+        .addEventListener("click", function () {
+          alert(
+            "Thanks for your interest! Feel free to explore my portfolio to learn more about my work."
+          );
+        });
+    </script>
+  </body>
+</html>
