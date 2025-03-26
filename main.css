@@ -1,0 +1,761 @@
+@import url("https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap");
+
+/* Add all your CSS here */
+body {
+    background: linear-gradient(to right,
+            rgba(168, 104, 104, 0.873),
+            rgba(192, 104, 104, 0.851),
+            rgba(111, 29, 29, 0.963),
+            rgb(102, 11, 11));
+    font-family: "Tektur", sans-serif;
+    font-size: 1rem;
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right,
+            rgba(168, 104, 104, 0.873),
+            rgba(192, 104, 104, 0.851),
+            rgba(111, 29, 29, 0.963),
+            rgb(102, 11, 11));
+
+    font-family: "Tektur", sans-serif;
+    font-size: 1rem;
+
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+}
+
+h1,
+h2,
+p,
+span,
+nav,
+ul,
+li,
+a {
+    font-family: "Tektur", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #120734;
+    color: white;
+    padding: 10px 20px;
+    height: 60px;
+    font-weight: bolder;
+}
+
+.left {
+    font-size: 20px;
+    font-family: Tektur;
+    margin-right: 20px;
+}
+
+.right ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-self: center;
+    position: absolute;
+    right: 480px;
+}
+
+.right ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: #0f072e;
+    padding: 5px 10px;
+    /* Add padding for better spacing */
+    border-radius: 5px;
+}
+
+li a:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgb(90, 82, 120);
+    border-radius: 6px;
+    padding: 2px 5px;
+    font-size: 1.025rem;
+}
+
+.first {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin: 10rem;
+}
+
+.first div {
+    width: 50%;
+    size: 40px;
+}
+
+.leftsection {
+    font-size: 2rem;
+    margin: 30px;
+    width: 60%;
+}
+
+.rightsection .img {
+    block-size: 10px;
+    margin: 50px;
+    left: 10px;
+    position: absolute;
+}
+
+.purple {
+    color: #1e0c5c;
+}
+
+.rightSection {
+    display: flex;
+    justify-content: space-around;
+    max-width: 60%;
+    margin: 20px;
+}
+
+.second {
+    max-width: 80vw;
+    margin: auto;
+    margin: 80vx;
+    height: 80vh;
+}
+
+.second h1 {
+    color: #ffffffe4;
+    align-content: center;
+    font-size: 2.5rem;
+}
+
+.third {
+    max-width: 80vw;
+    margin: auto;
+    margin: 80vx;
+    height: 80vh;
+}
+
+main hr {
+    border: 1px solid #a9a4e9e4;
+    height: 2px;
+    color: linear-gradient(to right,
+            #f1f1f1e4,
+            rgb(200, 207, 144),
+            rgba(191, 195, 88, 0.963),
+            #c7c710e4);
+    margin: 50px 70px;
+}
+
+.rightSection img:hover {
+    transform: scaleX(-1);
+}
+
+img {
+    transition: transform 0.5s ease-in-out;
+    /* Smooth animation */
+}
+
+.vertical .html {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: -80px;
+    left: -45px;
+    margin: 10px;
+}
+
+.box .details {
+    width: 150px;
+    font-size: small;
+    color: white;
+}
+
+.box .details h2 {
+    font-size: 1.5rem;
+    color: white;
+    color: white;
+    /* Base text color */
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #add8e6,
+        0 0 30px #add8e6, 0 0 40px #add8e6, 0 0 50px #add8e6, 0 0 00px#ADD8E6;
+    /* Glowing effect */
+    font-size: 1rem;
+    /* Adjust font size */
+}
+
+.vertical .css {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: -80px;
+    left: -45px;
+    margin: 10px;
+    background: none;
+}
+
+.vertical .js {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: -80px;
+    left: -45px;
+    margin: 10px;
+    background: none;
+}
+
+.vertical .python {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: -80px;
+    left: -45px;
+    margin: 10px;
+    background: none;
+}
+
+.gray {
+    color: #4b4a52e4;
+    margin-top: 0px;
+}
+
+.second .box {
+    background-color: white;
+    width: 170vh;
+    height: 2px;
+    margin: 100px -80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.vertical img {
+    margin: 0.2px;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: #f1f1f1e4;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.5s ease-in-out;
+    /* Smooth animation */
+    background: none;
+}
+
+.second .vertical {
+    height: 5rem;
+    width: 0.5px;
+    background-color: white;
+    margin: 0 100px;
+}
+
+.second .box .vertical:hover {
+    transform: scale(1.1);
+}
+
+.clickable-block {
+    width: 200px;
+    height: 100px;
+    background-color: #1e0c5c;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.Projects {
+    font-size: 2.5rem;
+    /* Adjust font size */
+    font-weight: bold;
+    /* Make the text bold */
+    text-align: center;
+    /* Center align the text */
+    margin-bottom: 20px;
+    /* Add spacing below */
+    color: white;
+    /* Text color */
+    text-transform: uppercase;
+    /* Make the text uppercase */
+}
+
+.project-block:hover {
+    transform: scale(1.05);
+    background-color: #6546d4;
+    /* Slightly enlarge on hover */
+}
+
+.HTMLpro {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow wrapping to create rows */
+    justify-content: center;
+    /* Center align the blocks */
+    gap: 20px;
+    /* Add spacing between blocks */
+    margin-top: 20px;
+}
+
+.hidden-block {
+    width: 100%;
+    /* Match the width of the project block */
+    background-color: linear-gradient(to right,
+            #f1f1f1e4,
+            rgb(152, 153, 180),
+            rgba(149, 153, 230, 0.963),
+            #210c67);
+    /* Background color for details */
+    color: #333;
+    /* Text color */
+    overflow: hidden;
+    /* Hide content when collapsed */
+    max-height: 0;
+    /* Initially collapsed */
+    transition: max-height 0.5s ease-in-out;
+    /* Smooth dropdown effect */
+    padding: 0 20px;
+    /* Add padding for content */
+    border-radius: 5px;
+    /* Match the rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Add shadow */
+    font-size: 1rem;
+    /* Adjust font size */
+    text-align: left;
+    /* Align text to the left */
+}
+
+.project-block {
+    width: 80%;
+    /* Fixed width */
+    /* Fixed height (comment corrected) */
+    background: linear-gradient(135deg,
+            #5d5daf,
+            #2428ff);
+    /* Linear gradient background */
+    color: white;
+    /* Text color */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 10px;
+    /* Rounded corners */
+    margin: 30px auto;
+    /* Center the block and add spacing */
+    text-align: center;
+    font-size: 1.2rem;
+    /* Adjust font size */
+    cursor: pointer;
+    /* Pointer cursor for interactivity */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1.2);
+    /* Add shadow */
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+    /* Smooth hover effect */
+}
+
+.project-block:hover {
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+    background: linear-gradient(135deg,
+            #6546d4,
+            #3f27a9);
+    /* Reverse gradient on hover */
+}
+
+.hidden-block.open {
+    max-height: 200px;
+    /* Adjust based on the content height */
+    padding: 70px 20px;
+    /* Add padding when open */
+    background-color: linear-gradient(to right,
+            #f1f1f1e4,
+            rgb(197, 205, 139),
+            rgba(187, 191, 71, 0.963),
+            #c7c710);
+    /* Change text color */
+}
+
+.right {
+    color: white;
+    /* Base text color */
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #add8e6,
+        0 0 30px #add8e6, 0 0 40px #add8e6, 0 0 50px #add8e6, 0 0 00px#ADD8E6;
+    /* Glowing effect */
+    font-size: 1rem;
+    /* Adjust font size */
+    font-weight: normal;
+    /* Make the text bold */
+    text-align: center;
+    /* Center align the text */
+    display: flex;
+    justify-content: center;
+    /* Center align the text */
+    align-items: center;
+    /* Center align the text */
+    height: 100vh;
+    /* Full height */
+}
+
+.about-me body {
+    background-color: white;
+    width: 180vh;
+    height: 2px;
+    margin: 100px -80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Add these styles to your existing CSS */
+#about-me {
+    padding: 200px;
+    background: linear-gradient(to right,
+            rgba(215, 213, 225, 0.873),
+            rgba(104, 108, 192, 0.851),
+            rgba(95, 97, 198, 0.963),
+            rgb(37, 37, 181));
+    color: white;
+    max-width: 80vw;
+    margin: auto;
+    margin: 80vx;
+    height: 80vh;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.about-content {
+    width: 60%;
+}
+
+.about-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+}
+
+#learn-more a {
+    background-color: #1e0c5c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    text-decoration: none;
+    text-emphasis-color: white;
+}
+
+.about-content button:hover {
+    background-color: #3f27a9;
+    transform: scale(1.05);
+
+    color: white;
+}
+
+.about-image {
+    width: 35%;
+    position: absolute;
+    right: -200px;
+    top: 150px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+#learn-more {
+    margin: 10%;
+    width: 19%;
+}
+
+#learn-more a:hover {
+    background-color: #3f27a9;
+    transform: scale(1.05);
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Add these styles to your existing CSS */
+#contact {
+    padding: 80px 0;
+    background: linear-gradient(to right,
+            rgba(168, 104, 104, 0.873),
+            rgba(192, 104, 104, 0.851),
+            rgba(111, 29, 29, 0.963),
+            rgb(102, 11, 11));
+    color: white;
+    text-align: center;
+}
+
+.contact-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.contact-container p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #e0e0e0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #1e0c5c;
+    background-color: rgba(255, 255, 255, 0.2);
+    outline: none;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #1e0c5c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #3f27a9;
+    transform: scale(1.05);
+}
+
+/* Add these styles to your existing CSS */
+#projects {
+    padding: 80px 0;
+    background: linear-gradient(to right,
+            rgba(215, 213, 225, 0.873),
+            rgba(104, 108, 192, 0.851),
+            rgba(95, 97, 198, 0.963),
+            rgb(37, 37, 181));
+    color: white;
+    text-align: center;
+}
+
+.projects-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projects-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.projects-container p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #e0e0e0;
+}
+
+.project-category {
+    margin-bottom: 60px;
+}
+
+.project-category h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.project-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #e0e0e0;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 1rem;
+    color: white;
+    background-color: #1e0c5c;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #3f27a9;
+}
+
+.button {
+    background-color: #1e0c5c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+    position: absolute;
+    top: 200px;
+    left: 0px;
+}
+
+/* Add these styles to your existing CSS */
+#footer {
+    padding: 40px 0;
+    background-color: #120734;
+    color: white;
+    text-align: center;
+}
+
+.footer-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-5px);
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+    /* Make icons white */
+}
+
+.copyright {
+    font-size: 1rem;
+    color: #e0e0e0;
+    margin-top: 10px;
+}
+
+#element {
+    color: #ebebebb4;
+    font-size: 2rem;
+    font-weight: bold;
+}
