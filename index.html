@@ -1,13 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap");
+/* Default/mobile styles first */
+body {
+  font-size: 16px;
+  /* other mobile styles */
+}
 
+/* Adjustments for tablets (768px and up) */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+  /* Other tablet-specific styles */
+}
+
+/* Desktop styles (1024px and up) */
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+  /* Other desktop-specific styles */
+}
+/* ===== Base Responsive Styles ===== */
+html, body {
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  width: 100%;
+}
+
+/* ===== Typography ===== */
+body {
+  font-size: 16px; /* Base size for mobile */
+}
+
+h1 { font-size: clamp(1.5rem, 5vw, 3rem); }
+h2 { font-size: clamp(1.3rem, 4vw, 2rem); }
+p, li, a {
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  line-height: 1.6;
+}
+
+/* ===== Layout Elements ===== */
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* ===== Navigation ===== */
+nav {
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.nav-links {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+/* ===== Project Cards ===== */
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 600px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects-container {
+    grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  }
+}
+
+/* ===== Images ===== */
+img, .project-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== Contact Form ===== */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+}
+
+@media (min-width: 600px) {
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+/* ===== Fix Background Reflections ===== */
+/* Add this to remove horizontal reflections */
+body::before {
+  width: 100vw;
+  left: 0;
+  right: 0;
+  background-size: cover;
+}
+.project {
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+.hero {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 5rem 1rem;
+  }
+}
+      /* Add this to completely remove the reflection effect */
+body::before {
+  display: none;
+}
 /* Add all your CSS here */
+
 body {
     background: linear-gradient(to right,
             rgba(168, 104, 104, 0.873),
